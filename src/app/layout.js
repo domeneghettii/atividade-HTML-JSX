@@ -1,25 +1,25 @@
-import React from "react";
-import { Roboto } from "next/font/google";
+import Header from "../components/Header/Header";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const font = Roboto ({
-  variable: "--font",
-  subsets: ["latin"],
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const roboto = localFont({
+  src: "../../public/font/Roboto-Regular.ttf",
+  variable: "--font-roboto",
 });
 
-export const metadata = {
-    title: "Aula 2 Front-End",
-    icons: {
-    icon: "/icons/favicon.ico",
-  },
-    description: "Projeto pra mostrar tudo que eu sei",
-
-};
-
 export default function RootLayout({ children }) {
-    return (
-        <html>
-            <body className={font.variable}>{children}</body>
-        </html>
-    );
+  return (
+    <html lang="pt-BR" className={`${inter.variable} ${roboto.variable}`}>
+      <body>
+        <Header
+          title="🛒 Loja de Eletrônicos"
+          subtitle="Os melhores produtos com os melhores preços!"
+          totalProducts={10} // ou useState para contar
+        />
+        <main>{children}</main>
+      </body>
+    </html>
+  );
 }

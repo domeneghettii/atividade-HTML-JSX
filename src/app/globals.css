@@ -1,10 +1,5 @@
-/* globals.css */
-.font-cormorant-regular {
-    font-family: var(--font-cormorant);
-    font-weight: 400;
-}
-
-.font-cormorant-bold {
-    font-family: var(--font-cormorant);
-    font-weight: 700;
+* {
+    box-sizing: border-box;
+    margin: .5% .3%;
+    padding: 0;
 }
