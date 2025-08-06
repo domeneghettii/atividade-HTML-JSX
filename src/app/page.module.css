@@ -8,3 +8,30 @@
     
 }
 
+.product-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.product-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.product-card p {
+    font-size: 1em;
+    color: #555;
+}   
+.product-card .price {
+    font-size: 1.2em;
+    color: #e60000;
+    font-weight: bold;
+}

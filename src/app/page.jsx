@@ -36,7 +36,7 @@ export default function HomePage() {
             />
 
             <ProductCard
-              imagem="💻 Dell XPS"
+              imagem="https://erbsinformatica.com.br/wp-content/uploads/2025/02/20250214_193740-scaled.jpg"
               nome="Dell XPS 13 Intel i7 16GB SSD 512GB"
               preco="R$ 6.799,00"
               desc="Ultrabook premium com design ultrafino, tela InfinityEdge e performance
@@ -46,13 +46,59 @@ export default function HomePage() {
             />
 
             <ProductCard
-              imagem="💻 Dell XPS"
+              imagem="https://img.olx.com.br/images/50/508455561633024.jpg"
               nome="iPad Pro 12.9 M2 WiFi 128GB"
               preco="R$ 7.299,00"
               desc="O tablet mais poderoso do mundo com chip M2, tela Liquid Retina XDR e suporte ao Apple Pencil."
               star="(4.8)"
               qntStar="1.876"
             />
+
+               <ProductCard
+              imagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2EVa9uRy5xkUmWqYJd0chjBd0Cyjb-3v_bQ&s"
+              nome="Samsung Galaxy Tab S9+ 256GB"
+              preco="R$ 4.999,00"
+              desc="Tablet premium Android com S Pen incluída, tela Dynamic AMOLED 2X e resistência à água."
+              star="(4.5)"
+              qntStar="432"
+            />
+
+            <ProductCard
+              imagem="https://macmagazine.com.br/wp-content/uploads/2022/11/29-airpodspro01-scaled.jpg"
+              nome="Apple AirPods Pro 2ª Geração"
+              preco="R$ 2.399,00"
+              desc="Fones sem fio com cancelamento ativo de ruído, áudio espacial e até 30h de bateria."
+              star="(4.7)"
+              qntStar="3.421"
+            />
+
+            <ProductCard
+              imagem="https://img.olx.com.br/images/20/203547782241288.jpg"
+              nome="Apple Watch Series 9 GPS 45mm"
+              preco="R$ 4.299,00"
+              desc="Smartwatch mais avançado com chip S9, Double Tap e monitoramento de saúde completo."
+              star="(4.6)"
+              qntStar="2.187"
+            />
+
+            <ProductCard
+              imagem="https://carrefourbr.vtexassets.com/arquivos/ids/113246043/06c5f431382640af82b931ae9b14e2d1.jpg?v=638196040845000000"
+              nome="Carregador Sem Fio MagSafe 15W"
+              preco="R$ 399,00"
+              desc="Carregamento sem fio rápido e seguro para iPhone, alinhamento magnético perfeito."
+              star="(4.4)"
+              qntStar="876"
+            />
+
+            <ProductCard
+              imagem="https://files.tecnoblog.net/wp-content/uploads/2022/12/xiaomi-13-pro-1060x795.jpg"
+              nome="Xiaomi 13 Pro 256GB Leica"
+              preco="R$ 3.999,00"
+              desc="Smartphone premium com câmeras Leica, carregamento ultra-rápido 120W e tela AMOLED."
+              star="(4.5)"
+              qntStar="654"
+            />
+            
           </div>
         </div>
     );

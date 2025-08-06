@@ -2,18 +2,25 @@
 import { useState } from "react";
 import styles from "./ProductCard.module.css";
 
-export default function ProductCard({imagem, nome, preco, desc, star, qntStar}) {
+export default function ProductCard({ imagem, nome, preco, desc, star, qntStar }) {
     const [aberto, setAberto] = useState(false);
 
     return (
         <div className={styles.container}>
             <img src={imagem} alt="" className={styles.image} />
 
-            <h2>{nome}</h2>
+            <div className={styles.nome}>
+                <h2>{nome}</h2>
+            </div>
 
-            <h1>{preco}</h1>
+            <div className={styles.preco}>
+                <h1>{preco}</h1>
+            </div>
 
-            <p>{desc}</p>
+            <div className={styles.descricao}>
+                <p>{desc}</p>
+
+            </div>
 
             <div className={styles.stars}>
                 <span>⭐⭐⭐⭐⭐</span>
