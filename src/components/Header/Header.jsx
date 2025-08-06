@@ -1,13 +1,17 @@
-import Image from "next/image";
+"use client";
+import { useState } from "react";
 import styles from "./Header.module.css";
 
-export default function Header({ title, subtitle, totalProducts }) {
-  return (
-    <header className={styles.header}>
-      <Image src="/logo.png" alt="Logo da empresa" width={60} height={60} priority className={styles.logo} />
-      <h1>{title}</h1>
-      <p>{subtitle}</p>
-      <p>📊 Total de produtos: {totalProducts}</p>
-    </header>
-  );
+export default function Header({titulo, subtitulo, quantidade}) {
+    const [aberto, setAberto] = useState(false);
+
+    return (
+        <header className={styles.container}>
+            <h1>{titulo}</h1>
+
+            <p>{subtitulo}</p>
+
+            <p>{quantidade}</p>
+        </header>
+    );
 }
